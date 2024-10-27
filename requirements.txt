@@ -8,3 +8,4 @@ ee
 openpyxl
 earthengine-api
 cupy-cuda11x
+numpy==1.26.4
