@@ -7,3 +7,4 @@ geemap
 ee
 openpyxl
 earthengine-api
+cupy-cuda11x
