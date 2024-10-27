@@ -9,6 +9,11 @@ import math
 import ee
 import time
 
+google_oauth = st.secrets["google_oauth"]
+client_id = google_oauth["client_id"]
+client_secret = google_oauth["client_secret"]
+refresh_token = google_oauth["refresh_token"]
+
 st.set_page_config(layout="wide")
 
 # customize the side bar
