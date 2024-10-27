@@ -395,20 +395,6 @@ def main(page: ft.Page):
             main_content
         ], expand=True)
     )    
-    # Main content
-    main_content = ft.Container(
-        content=views[0],
-        expand=True
-    )
-    
-    # Main layout
-    page.add(
-        ft.Row([
-            rail,
-            ft.VerticalDivider(width=1),
-            main_content
-        ], expand=True)
-    )
 
 # Prepare the data and train models
 df = data.dropna(subset=['Rainfall (mm/hr)', 'flood(Y)'])
