@@ -12,10 +12,10 @@ This project aims to develop a predictive model for identifying flood-prone area
 
 **Interface** <br>
 Approach 1: 
-<img src="images/megathon3.jpeg" alt="Interface approach 1" />
-<img src="images/megathon4.jpeg" alt="Interface approach 1" />
-<img src="images/megathon5.jpeg" alt="Interface approach 1" />
-<img src="images/megathon8.jpeg" alt="Resulting Map" />
+<img src="images/megathon3.png" alt="Interface approach 1" />
+<img src="images/megathon4.png" alt="Interface approach 1" />
+<img src="images/megathon5.png" alt="Interface approach 1" />
+<img src="images/megathon8.png" alt="Resulting Map" />
 
 Approach 2:
 <img src="images/megathon6.jpeg" alt="Interface approach 2" />
