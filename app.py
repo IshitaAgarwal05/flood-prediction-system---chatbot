@@ -10,19 +10,14 @@ import ee
 import time
 import os
 
-# Load secrets into environment variables
-def load_secrets_into_env():
-    # Iterate over all secrets and set them as environment variables
-    for key, value in st.secrets.items():
-        os.environ[key] = value
-
-# Call the function to load secrets
-load_secrets_into_env()
-
-# Now you can access the secrets via os.environ
-client_id = os.getenv("GOOGLE_CLIENT_ID")
-client_secret = os.getenv("GOOGLE_CLIENT_SECRET")
-refresh_token = os.getenv("GOOGLE_REFRESH_TOKEN")
+# Initialize Earth Engine directly
+credentials = {
+    'client_id': '764086051850-6qr4p6gpi6hn506pt8ejuq83di341hur.apps.googleusercontent.com',
+    'client_secret': 'd-FL95Q19q7MQmFpd7hHD0Ty',
+    'refresh_token': '1//0gKBb06olSZYjCgYIARAAGBASNwF-L9IrFcq5GKtw6B3Vmxp49m3AQ3lqTk1ky3qU3wlUb7gjEmXvKsib4xW27w9GtmSlOUEfN8c'
+}
+credentials = ee.ServiceAccountCredentials(email=None, key_data=None)
+ee.Initialize(credentials)
 
 st.set_page_config(layout="wide")
 
