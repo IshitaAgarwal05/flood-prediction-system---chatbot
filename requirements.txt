@@ -6,3 +6,4 @@ leafmap
 geemap
 ee
 openpyxl
+earthengine-api
