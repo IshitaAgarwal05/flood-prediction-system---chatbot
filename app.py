@@ -8,11 +8,21 @@ import geemap
 import math
 import ee
 import time
+import os
 
-google_oauth = st.secrets["google_oauth"]
-client_id = google_oauth["client_id"]
-client_secret = google_oauth["client_secret"]
-refresh_token = google_oauth["refresh_token"]
+# Load secrets into environment variables
+def load_secrets_into_env():
+    # Iterate over all secrets and set them as environment variables
+    for key, value in st.secrets.items():
+        os.environ[key] = value
+
+# Call the function to load secrets
+load_secrets_into_env()
+
+# Now you can access the secrets via os.environ
+client_id = os.getenv("GOOGLE_CLIENT_ID")
+client_secret = os.getenv("GOOGLE_CLIENT_SECRET")
+refresh_token = os.getenv("GOOGLE_REFRESH_TOKEN")
 
 st.set_page_config(layout="wide")
 
